@@ -58,5 +58,17 @@
         android:layout_height="wrap_content"
         android:text="Audio"
         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Swipe Video Creating"
+        android:gravity="center"
+        />
+    <Button
+        android:id="@+id/swipeVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Audio"
+        />
 
 </LinearLayout>
