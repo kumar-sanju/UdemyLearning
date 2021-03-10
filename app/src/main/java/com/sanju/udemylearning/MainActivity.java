@@ -20,7 +20,14 @@ public class MainActivity extends AppCompatActivity {
         Button audio = (Button) findViewById(R.id.audio);
         Button gridLayout = (Button) findViewById(R.id.gridLayout);
         Button swipeVideo = (Button) findViewById(R.id.swipeVideo);
+        Button listView = (Button) findViewById(R.id.listView);
 
+        listView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ListviewActivity.class));
+            }
+        });
         swipeVideo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
