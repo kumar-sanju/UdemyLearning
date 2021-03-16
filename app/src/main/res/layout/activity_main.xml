@@ -16,6 +16,18 @@
         android:gravity="center"
         />
     <Button
+        android:id="@+id/other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Other Button"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fading Animation"
+        android:gravity="center"
+        />
+    <Button
         android:id="@+id/fadebtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

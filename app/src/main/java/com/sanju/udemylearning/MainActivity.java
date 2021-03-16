@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Button other = (Button) findViewById(R.id.other);
         Button btn = (Button) findViewById(R.id.fadebtn);
         Button video = (Button) findViewById(R.id.video);
         Button audio = (Button) findViewById(R.id.audio);
@@ -22,7 +23,12 @@ public class MainActivity extends AppCompatActivity {
         Button swipeVideo = (Button) findViewById(R.id.swipeVideo);
         Button listView = (Button) findViewById(R.id.listView);
 
-        listView.setOnClickListener(new View.OnClickListener() {
+        other.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ListviewActivity.class));
+            }
+        });listView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, ListviewActivity.class));
