@@ -6,14 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 
-public class MainActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_home);
 
         Button other = (Button) findViewById(R.id.other);
         Button btn = (Button) findViewById(R.id.fadebtn);
@@ -22,46 +21,61 @@ public class MainActivity extends AppCompatActivity {
         Button gridLayout = (Button) findViewById(R.id.gridLayout);
         Button swipeVideo = (Button) findViewById(R.id.swipeVideo);
         Button listView = (Button) findViewById(R.id.listView);
+        Button sharedAnimation = (Button) findViewById(R.id.sharedAnimation);
+        Button downloadWebConntent = (Button) findViewById(R.id.downloadWebConntent);
 
+        downloadWebConntent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, DownloadWebcontentActivity.class));
+            }
+        });
+        sharedAnimation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, SharedAnimationActivity.class));
+            }
+        });
         other.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, ListviewActivity.class));
+                startActivity(new Intent(HomeActivity.this, ListviewActivity.class));
             }
-        });listView.setOnClickListener(new View.OnClickListener() {
+        });
+        listView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, ListviewActivity.class));
+                startActivity(new Intent(HomeActivity.this, ListviewActivity.class));
             }
         });
         swipeVideo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, SwipeVideoActivity.class));
+                startActivity(new Intent(HomeActivity.this, SwipeVideoActivity.class));
             }
         });
         gridLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, AudioActivity.class));
+                startActivity(new Intent(HomeActivity.this, GridlayoutActivity.class));
             }
         });
         audio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, AudioActivity.class));
+                startActivity(new Intent(HomeActivity.this, AudioActivity.class));
             }
         });
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, FadingAnimActivity.class));
+                startActivity(new Intent(HomeActivity.this, FadingAnimActivity.class));
             }
         });
         video.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, VideoActivity.class));
+                startActivity(new Intent(HomeActivity.this, VideoActivity.class));
             }
         });
 
