@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEEEE"
+    tools:context=".NeumorphicAnimationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <com.github.sshadkany.RectButton
+            android:id="@+id/rec_image_button"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:shape_roundRect_bottomLeftRadius="100dp"
+            app:shape_roundRect_bottomRightRadius="100dp"
+            app:shape_roundRect_topRightRadius="100dp"
+            app:shape_roundRect_topLeftRadius="100dp"
+            app:shape_roundRect_backgroundColor="#303234"
+            app:shape_roundRect_light_color="#66494949"
+            app:shape_roundRect_dark_color="#66000000"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="32dp"
+                android:tint="#100F0F"
+                app:srcCompat="@drawable/abc_vector_test" />
+
+        </com.github.sshadkany.RectButton>
+
+        <com.github.sshadkany.RectButton
+            android:id="@+id/rec_text_button"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+            app:shape_roundRect_topRightRadius="60dp"
+            app:shape_roundRect_bottomLeftRadius="60dp"
+
+            app:shape_roundRect_backgroundColor="#303234"
+            app:shape_roundRect_light_color="#66494949"
+            app:shape_roundRect_dark_color="#66000000"
+
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="TextView"
+                android:textSize="30sp" />
+        </com.github.sshadkany.RectButton>
+        <com.github.sshadkany.CircleButton
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shape_circle_shadow_position_y="-10dp"
+            app:shape_circle_shadow_position_x="20dp"
+            app:shape_circle_dark_color="@color/colorPrimary"
+            app:shape_circle_light_color="@color/colorAccent"
+            app:shape_circle_borderColor="@color/colorPrimaryDark"
+            app:shape_circle_borderWidth="4dp"
+            >
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:padding="32dp"
+                android:tint="#100F0F"
+                app:srcCompat="@drawable/abc_vector_test" />
+
+        </com.github.sshadkany.CircleButton>
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lines="2"
+            android:text="shape_circle_shadow_type="
+            android:textSize="24sp"
+            android:layout_gravity="center"/>
+
+        <com.github.sshadkany.shapes.CircleView
+            android:id="@+id/btn35"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            app:shape_circle_backgroundColor="#ECF0F3"
+            app:shape_circle_shadow_type="drop_shadow" />
+
+        <com.github.sshadkany.shapes.CircleView
+            android:id="@+id/btn36"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            app:shape_circle_backgroundColor="#ECF0F3"
+            app:shape_circle_shadow_type="small_inner_shadow" />
+
+        <com.github.sshadkany.shapes.CircleView
+            android:id="@+id/btn37"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            app:shape_circle_backgroundColor="#ECF0F3"
+            app:shape_circle_shadow_type="big_inner_shadow" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Neumorphism123456789"
+                android:textColor="@android:color/black"
+                android:textSize="50dp" />
+
+            <com.github.sshadkany.neoText
+                android:id="@+id/neotext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:neo_shadow_type="drop_shadow"
+                android:layout_below="@+id/textView"
+                app:neo_radius="3dp">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Neumorphism123456789"
+                    android:textColor="#000000"
+                    android:textSize="50dp" />
+
+            </com.github.sshadkany.neoText>
+
+            <com.github.sshadkany.neoText
+                android:id="@+id/neotext2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:neo_radius="3dp"
+                android:layout_below="@+id/neotext"
+                app:neo_shadow_type="small_inner_shadow">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Neumorphism123456789"
+                    android:textColor="#000000"
+                    android:textSize="50dp" />
+
+            </com.github.sshadkany.neoText>
+
+        </RelativeLayout>
+        <com.github.sshadkany.shapes.PolygonView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:shape_polygon_shadow_type="drop_shadow"
+            app:shape_polygon_side="4">
+
+            <com.github.sshadkany.PolygonButton
+                android:id="@+id/polygon_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                app:shape_polygon_side="4">
+
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:padding="60dp"
+                    android:tint="#000000"
+                    app:srcCompat="@drawable/abc_vector_test" />
+            </com.github.sshadkany.PolygonButton>
+
+        </com.github.sshadkany.shapes.PolygonView>
+
+        <com.github.sshadkany.shapes.RoundRectView
+            android:id="@+id/btn3"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            app:shape_roundRect_backgroundColor="#0591FA"
+            app:shape_roundRect_bottomLeftRadius="12dp"
+            app:shape_roundRect_bottomRightRadius="12dp"
+            app:shape_roundRect_shadow_type="drop_shadow"
+            app:shape_roundRect_topLeftRadius="12dp"
+            app:shape_roundRect_topRightRadius="12dp">
+
+            <com.github.sshadkany.shapes.RoundRectView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                app:shape_roundRect_backgroundColor="#ECF0F3"
+                app:shape_roundRect_bottomLeftRadius="12dp"
+                app:shape_roundRect_bottomRightRadius="12dp"
+                app:shape_roundRect_shadow_type="small_inner_shadow"
+                app:shape_roundRect_topLeftRadius="12dp"
+                app:shape_roundRect_topRightRadius="12dp">
+
+                <com.github.sshadkany.shapes.RoundRectView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    app:shape_roundRect_backgroundColor="#ECF0F3"
+                    app:shape_roundRect_bottomLeftRadius="12dp"
+                    app:shape_roundRect_bottomRightRadius="12dp"
+                    app:shape_roundRect_shadow_type="drop_shadow"
+                    app:shape_roundRect_topLeftRadius="12dp"
+                    app:shape_roundRect_topRightRadius="12dp">
+
+                </com.github.sshadkany.shapes.RoundRectView>
+            </com.github.sshadkany.shapes.RoundRectView>
+        </com.github.sshadkany.shapes.RoundRectView>
+        <com.github.sshadkany.CircleButton
+            android:id="@+id/circle_image_button"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:padding="32dp"
+                android:tint="#100F0F"
+                app:srcCompat="@drawable/abc_vector_test" />
+
+        </com.github.sshadkany.CircleButton>
+
+        <com.github.sshadkany.CircleButton
+            android:id="@+id/circle_text_button"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/gray"
+            app:shape_circle_backgroundColor="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circle_image_button">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="TextView"
+                android:textSize="30sp" />
+        </com.github.sshadkany.CircleButton>
+
+        <com.github.sshadkany.shapes.PolygonView
+            android:id="@+id/my_polygon"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+            app:shape_polygon_backgroundColor="#FF5722"
+            app:shape_polygon_shadow_type="drop_shadow"
+            android:layout_gravity="center"
+            app:shape_polygon_side="3">
+
+
+        </com.github.sshadkany.shapes.PolygonView>
+
+        <com.github.sshadkany.shapes.RoundRectView
+            android:id="@+id/roundRectView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            app:shape_roundRect_backgroundColor="#303234"
+            app:shape_roundRect_light_color="#66494949"
+            app:shape_roundRect_dark_color="#66000000"
+            app:shape_roundRect_bottomLeftRadius="12dp"
+            app:shape_roundRect_bottomRightRadius="12dp"
+            app:shape_roundRect_topLeftRadius="12dp"
+            app:shape_roundRect_topRightRadius="12dp"
+            android:layout_gravity="center"
+            app:shape_roundRect_shadow_type="drop_shadow">
+
+        </com.github.sshadkany.shapes.RoundRectView>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/card"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn1"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn1"
+                android:text="Btn1"
+                android:clickable="true"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="85dp"
+                android:layout_height="45dp"
+                android:alpha="0.7"
+                android:clickable="false"
+                android:background="@drawable/btn"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray"
+            android:clipChildren="false"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            >
+
+            <com.borutsky.neumorphism.NeumorphicFrameLayout
+                android:id="@+id/previousBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:background_color="@color/gray"
+                app:corner_radius="20dp"
+                app:shape="rectangle"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                app:state="convex"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_fast_backward"
+                    android:layout_gravity="center"
+                    />
+
+            </com.borutsky.neumorphism.NeumorphicFrameLayout>
+
+            <com.borutsky.neumorphism.NeumorphicFrameLayout
+                android:id="@+id/playBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                app:background_color="@color/gray"
+                android:layout_margin="10dp"
+                app:corner_radius="20dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:shape="rectangle"
+                app:state="convex">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_play"
+                    android:layout_gravity="center"
+                    />
+
+            </com.borutsky.neumorphism.NeumorphicFrameLayout>
+
+            <com.borutsky.neumorphism.NeumorphicFrameLayout
+                android:id="@+id/pauseBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                app:background_color="@color/gray"
+                android:layout_margin="10dp"
+                app:corner_radius="20dp"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:shape="rectangle"
+                app:state="convex">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_pause"
+                    android:layout_gravity="center"
+                    />
+
+            </com.borutsky.neumorphism.NeumorphicFrameLayout>
+
+            <com.borutsky.neumorphism.NeumorphicFrameLayout
+                android:id="@+id/nextBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                app:background_color="@color/gray"
+                android:layout_margin="10dp"
+                android:layout_row="0"
+                android:layout_column="4"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:corner_radius="20dp"
+                app:shape="rectangle"
+                app:state="convex">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_fast_forward"
+                    android:layout_gravity="center"
+                    />
+
+            </com.borutsky.neumorphism.NeumorphicFrameLayout>
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circel"
+            android:clipChildren="false"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            >
+
+            <com.borutsky.neumorphism.NeumorphicFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:background_color="@color/gray"
+                app:corner_radius="20dp"
+                app:shape="rectangle"
+                app:state="convex"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_fast_backward"
+                    android:layout_gravity="center"
+                    />
+
+            </com.borutsky.neumorphism.NeumorphicFrameLayout>
+
+            <com.borutsky.neumorphism.NeumorphicFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                app:background_color="@color/gray"
+                android:layout_margin="10dp"
+                app:corner_radius="20dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:shape="rectangle"
+                app:state="convex">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_play"
+                    android:layout_gravity="center"
+                    />
+
+            </com.borutsky.neumorphism.NeumorphicFrameLayout>
+
+            <com.borutsky.neumorphism.NeumorphicFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                app:background_color="@color/gray"
+                android:layout_margin="10dp"
+                app:corner_radius="20dp"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:shape="rectangle"
+                app:state="convex">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_pause"
+                    android:layout_gravity="center"
+                    />
+
+            </com.borutsky.neumorphism.NeumorphicFrameLayout>
+
+            <com.borutsky.neumorphism.NeumorphicFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                app:background_color="@color/gray"
+                android:layout_margin="10dp"
+                android:layout_row="0"
+                android:layout_column="4"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:corner_radius="20dp"
+                app:shape="rectangle"
+                app:state="convex">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_fast_forward"
+                    android:layout_gravity="center"
+                    />
+
+            </com.borutsky.neumorphism.NeumorphicFrameLayout>
+
+        </GridLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="30dp"
+            android:layout_margin="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/circel"
+                android:clipChildren="false"
+                >
+                <com.borutsky.neumorphism.NeumorphicFrameLayout
+                    android:id="@+id/prevBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    app:background_color="@color/gray"
+                    app:corner_radius="20dp"
+                    app:shape="rectangle"
+                    app:state="convex"
+                    >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_fast_backward"
+                        android:layout_gravity="center"
+                        />
+
+                </com.borutsky.neumorphism.NeumorphicFrameLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</ScrollView>

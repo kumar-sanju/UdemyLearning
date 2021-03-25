@@ -122,6 +122,54 @@
             android:layout_height="wrap_content"
             android:text="Download web content"
             />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Neumerphic"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/neumerphic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Neumerphic"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button Navigation"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/buttonNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button Navigation"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Collapsing Toolbar"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Collapsing Toolbar"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Animate Transitions"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/animateTransitions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Animate Transitions"
+            />
     </LinearLayout>
 
 </ScrollView>

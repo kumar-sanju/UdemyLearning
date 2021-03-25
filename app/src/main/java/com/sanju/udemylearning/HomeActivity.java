@@ -23,7 +23,35 @@ public class HomeActivity extends AppCompatActivity {
         Button listView = (Button) findViewById(R.id.listView);
         Button sharedAnimation = (Button) findViewById(R.id.sharedAnimation);
         Button downloadWebConntent = (Button) findViewById(R.id.downloadWebConntent);
+        Button neumerphic = (Button) findViewById(R.id.neumerphic);
+        Button buttonNavigation = (Button) findViewById(R.id.buttonNavigation);
+        Button collapsingToolbar = (Button) findViewById(R.id.collapsingToolbar);
+        Button animateTransitions = (Button) findViewById(R.id.animateTransitions);
 
+        animateTransitions.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, AnimateTransitionsActivity.class));
+            }
+        });
+        collapsingToolbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, CollapsingToolbarActivity.class));
+            }
+        });
+        buttonNavigation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, ButtonNaviagtionActivity.class));
+            }
+        });
+        neumerphic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, NeumorphicAnimationActivity.class));
+            }
+        });
         downloadWebConntent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

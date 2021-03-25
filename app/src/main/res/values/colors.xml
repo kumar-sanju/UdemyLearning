@@ -2,7 +2,12 @@
 <resources>
     <color name="colorPrimary">#BB86FC</color>
     <color name="colorPrimaryDark">#00e5ff</color>
+    <color name="textColorPrimaryDark">#fff</color>
     <color name="colorAccent">#813fa6</color>
+
+
+    <color name="gray">#555</color>
+    <color name="white">#fff</color>
 
     <color name="purple">#813fab</color>
 
@@ -24,4 +29,9 @@
     <color name="md_brown_800">#4E342E</color>
 
     <color name="black_overlay">#66000000</color>
+
+    <color name="accent">#FF5252</color>
+    <color name="second_accent">#FFEB3B</color>
+
+
 </resources>
