@@ -50,6 +50,9 @@ dependencies {
 
     implementation "com.andkulikov:transitionseverywhere:1.8.1"
 
+    implementation 'com.github.shrikanth7698:Night-Mode-Button:V1.0'
+
+    implementation 'com.github.lecho:hellocharts-android:v1.5.8'
 
 
 

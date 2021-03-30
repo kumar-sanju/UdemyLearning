@@ -27,7 +27,21 @@ public class HomeActivity extends AppCompatActivity {
         Button buttonNavigation = (Button) findViewById(R.id.buttonNavigation);
         Button collapsingToolbar = (Button) findViewById(R.id.collapsingToolbar);
         Button animateTransitions = (Button) findViewById(R.id.animateTransitions);
+        Button otherAnimation = (Button) findViewById(R.id.otherAnimation);
+        Button newLook = (Button) findViewById(R.id.newLook);
 
+        newLook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, NewLookActivity.class));
+            }
+        });
+        otherAnimation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, OtherActivity.class));
+            }
+        });
         animateTransitions.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -8,6 +8,7 @@
 
     <color name="gray">#555</color>
     <color name="white">#fff</color>
+    <color name="dark">#1a1a1a</color>
 
     <color name="purple">#813fab</color>
 
@@ -32,6 +33,12 @@
 
     <color name="accent">#FF5252</color>
     <color name="second_accent">#FFEB3B</color>
+
+    <color name="round">#f4891e</color>
+
+    <color name="neumerphic">#F7F7F7</color>
+    <color name="neumerphicBtn">#FCFCFC</color>
+    <color name="neumerphicBtnNavigation">#F4891E</color>
 
 
 </resources>

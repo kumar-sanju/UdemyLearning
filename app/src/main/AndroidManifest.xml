@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AnimateTransitionsActivity"></activity>
+        <activity android:name=".NewLookActivity"></activity>
+        <activity android:name=".AnimateTransitionsActivity" />
         <activity android:name=".CollapsingToolbarActivity" />
         <activity android:name=".ButtonNaviagtionActivity" />
         <activity android:name=".NeumorphicAnimationActivity">

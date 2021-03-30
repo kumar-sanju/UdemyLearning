@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/neumerphic"
+    android:orientation="vertical"
+    tools:context=".NewLookActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:clipChildren="false"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:clipChildren="false"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:clipChildren="false"
+                >
+
+                <com.borutsky.neumorphism.NeumorphicFrameLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    app:background_color="@color/neumerphicBtn"
+                    android:layout_marginLeft="20dp"
+                    app:corner_radius="20dp"
+                    app:shape="rectangle"
+                    app:state="flat">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_play" />
+
+                </com.borutsky.neumorphism.NeumorphicFrameLayout>
+
+                <com.borutsky.neumorphism.NeumorphicFrameLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    app:background_color="@color/neumerphicBtn"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="20dp"
+                    app:corner_radius="20dp"
+                    app:shape="circle"
+                    app:state="flat">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_play" />
+
+                </com.borutsky.neumorphism.NeumorphicFrameLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:clipChildren="false"
+                >
+                <RelativeLayout
+                    android:layout_width="290dp"
+                    android:layout_height="300dp"
+                    android:background="@drawable/round_gradient"
+                    android:layout_marginLeft="10dp"
+                    />
+                <com.borutsky.neumorphism.NeumorphicFrameLayout
+                    android:id="@+id/secondBlock"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:clipChildren="false"
+                    app:background_color="@color/neumerphicBtn"
+                    app:corner_radius="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:elevation="1dp"
+                    app:shape="circle"
+                    app:state="flat">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        >
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:textSize="100dp"
+                            android:text="30" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:textSize="15dp"
+                            android:layout_below="@+id/title"
+                            android:layout_toRightOf="@+id/title"
+                            android:text="mg/l" />
+                    </RelativeLayout>
+
+                </com.borutsky.neumorphism.NeumorphicFrameLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:clipChildren="false"
+                android:gravity="center">
+
+                <com.borutsky.neumorphism.NeumorphicFrameLayout
+                    android:id="@+id/preAudio"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    app:background_color="@color/neumerphicBtn"
+                    app:corner_radius="20dp"
+                    app:shape="rectangle"
+                    app:state="flat">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Disconnect"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        />
+
+                </com.borutsky.neumorphism.NeumorphicFrameLayout>
+
+                <com.borutsky.neumorphism.NeumorphicFrameLayout
+                    android:id="@+id/nextAudio"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    app:background_color="@color/neumerphicBtn"
+                    android:layout_toRightOf="@+id/preAudio"
+                    android:layout_marginLeft="20dp"
+                    app:corner_radius="20dp"
+                    app:shape="circle"
+                    app:state="flat">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_play" />
+
+                </com.borutsky.neumorphism.NeumorphicFrameLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="100dp"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    app:cardCornerRadius="20dp"
+                    android:padding="10dp"
+                    android:elevation="10dp"
+                    android:layout_marginBottom="2dp"
+                    >
+                    <lecho.lib.hellocharts.view.LineChartView
+                        android:id="@+id/chart_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="270dp"
+                        android:layout_marginTop="10dp"
+                        android:focusable="true"
+                        android:padding="5dp"
+                        android:clickable="true"
+                        />
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.gauravk.bubblenavigation.BubbleNavigationConstraintView
+        android:id="@+id/floating_top_bar_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_rect_white"
+        android:elevation="8dp"
+        android:padding="16dp"
+        android:alpha=".7"
+        app:bnc_mode="packed"
+        android:layout_alignParentBottom="true">
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_colorActive="#f4891e"
+            app:bt_colorInactive="#fff"
+            app:bt_icon="@drawable/ic_home"
+            app:bt_shape="@drawable/rounded_rect"
+            app:bt_shapeColor="#fff"
+            app:bt_title="Home"
+            />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_colorActive="#f4891e"
+            app:bt_colorInactive="#fff"
+            app:bt_icon="@drawable/ic_search"
+            app:bt_shape="@drawable/rounded_rect"
+            app:bt_shapeColor="#fff"
+            app:bt_title="Search" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_profile_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_colorActive="#f4891e"
+            app:bt_colorInactive="#fff"
+            app:bt_icon="@drawable/ic_like"
+            app:bt_shape="@drawable/rounded_rect"
+            app:bt_shapeColor="#fff"
+            app:bt_title="Likes" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_colorActive="#f4891e"
+            app:bt_colorInactive="#fff"
+            app:bt_icon="@drawable/ic_playlist"
+            app:bt_shape="@drawable/rounded_rect"
+            app:bt_shapeColor="#fff"
+            app:bt_title="Notification" />
+
+    </com.gauravk.bubblenavigation.BubbleNavigationConstraintView>
+
+
+</RelativeLayout>
