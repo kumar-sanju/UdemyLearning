@@ -16,13 +16,37 @@
         android:id="@+id/nightModeButton"
         android:layout_centerVertical="true"/>
 
-    <Button
-        android:id="@+id/thebutton"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Press Me!"
+        android:orientation="vertical"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        />
+        >
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher"
+            app:fabSize="normal" />
+        <Button
+            android:id="@+id/button_reveal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button_hide"
+            android:layout_gravity="center"
+            android:layout_alignBottom="@id/button_hide"
+            android:layout_toStartOf="@id/button_hide"
+            android:text="reveal" />
+        <Button
+            android:id="@+id/button_hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/fab"
+            android:layout_gravity="center"
+            android:layout_toStartOf="@id/fab"
+            android:text="hide" />
+    </LinearLayout>
 
 </RelativeLayout>
