@@ -29,7 +29,21 @@ public class HomeActivity extends AppCompatActivity {
         Button animateTransitions = (Button) findViewById(R.id.animateTransitions);
         Button otherAnimation = (Button) findViewById(R.id.otherAnimation);
         Button newLook = (Button) findViewById(R.id.newLook);
+        Button circleAnimation = (Button) findViewById(R.id.circleAnimation);
+        Button progressBar = (Button) findViewById(R.id.progressBar);
 
+        progressBar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, CircularProgressBarActivity.class));
+            }
+        });
+        circleAnimation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, CircleAnimationActivity.class));
+            }
+        });
         newLook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

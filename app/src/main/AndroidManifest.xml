@@ -14,7 +14,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NewLookActivity"></activity>
+        <activity android:name=".CircularProgressBarActivity"></activity>
+        <activity android:name=".CircleAnimationActivity" />
+        <activity android:name=".NewLookActivity" />
         <activity android:name=".AnimateTransitionsActivity" />
         <activity android:name=".CollapsingToolbarActivity" />
         <activity android:name=".ButtonNaviagtionActivity" />
