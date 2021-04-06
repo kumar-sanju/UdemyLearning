@@ -31,7 +31,14 @@ public class HomeActivity extends AppCompatActivity {
         Button newLook = (Button) findViewById(R.id.newLook);
         Button circleAnimation = (Button) findViewById(R.id.circleAnimation);
         Button progressBar = (Button) findViewById(R.id.progressBar);
+        Button progressButton = (Button) findViewById(R.id.progressButton);
 
+        progressButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, ProgressButtonActivity.class));
+            }
+        });
         progressBar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
