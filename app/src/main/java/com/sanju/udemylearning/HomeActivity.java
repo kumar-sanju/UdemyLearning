@@ -32,7 +32,14 @@ public class HomeActivity extends AppCompatActivity {
         Button circleAnimation = (Button) findViewById(R.id.circleAnimation);
         Button progressBar = (Button) findViewById(R.id.progressBar);
         Button progressButton = (Button) findViewById(R.id.progressButton);
+        Button multipleImagePicker = (Button) findViewById(R.id.multipleImagePicker);
 
+        multipleImagePicker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, ImagePickerActivity.class));
+            }
+        });
         progressButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

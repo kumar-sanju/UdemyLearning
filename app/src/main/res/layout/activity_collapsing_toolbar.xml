@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ctr_bg"
+    android:background="@drawable/product_detail_bg"
     tools:context=".CollapsingToolbarActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -23,7 +23,7 @@
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:title="Hello Friends"
             android:id="@+id/collapsing_toolbar"
-            android:background="@drawable/ctr_bg"
+            android:background="@drawable/product_detail_bg"
             >
 
             <ImageView
@@ -109,7 +109,6 @@
 
         </LinearLayout>
 
-
     </androidx.core.widget.NestedScrollView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -124,6 +123,5 @@
         android:layout_marginRight="30dp"
         android:backgroundTint="#C17C05"
         />
-
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

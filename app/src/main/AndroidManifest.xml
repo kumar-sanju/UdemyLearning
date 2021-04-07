@@ -3,6 +3,9 @@
     package="com.sanju.udemylearning">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- the following two permissions are required if you want to take photo in selector -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -13,8 +16,18 @@
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".ProgressButtonActivity"></activity>
+        android:theme="@style/AppTheme"
+        android:name=".DemoApplication"
+        >
+        <activity android:name=".ImagesSelectorActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="false"/>
+        <!-- <activity android:name=".ImagePickerActivity"></activity> -->
+        <activity
+            android:name=".ImagePickerActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="false" />
+        <activity android:name=".ProgressButtonActivity" />
         <activity android:name=".CircularProgressBarActivity" />
         <activity android:name=".CircleAnimationActivity" />
         <activity android:name=".NewLookActivity" />
