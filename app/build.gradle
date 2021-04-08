@@ -64,6 +64,8 @@ dependencies {
 
     implementation 'com.zfdang.multiple-images-selector:multiple-images-selector:1.1.5'
 
+    implementation 'com.github.mohammadatif:Animatoo:master'
+
 
 
 }

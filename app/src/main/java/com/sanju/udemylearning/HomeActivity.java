@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+
 public class HomeActivity extends AppCompatActivity {
 
     @Override
@@ -38,6 +40,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(HomeActivity.this, ImagePickerActivity.class));
+                Animatoo.animateWindmill(getApplicationContext());
             }
         });
         progressButton.setOnClickListener(new View.OnClickListener() {
