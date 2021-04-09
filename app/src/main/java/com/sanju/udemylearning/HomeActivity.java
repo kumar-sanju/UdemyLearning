@@ -35,12 +35,18 @@ public class HomeActivity extends AppCompatActivity {
         Button progressBar = (Button) findViewById(R.id.progressBar);
         Button progressButton = (Button) findViewById(R.id.progressButton);
         Button multipleImagePicker = (Button) findViewById(R.id.multipleImagePicker);
+        Button imageProgressBar = (Button) findViewById(R.id.imageProgressBar);
 
+        imageProgressBar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, imageProgressBarActivity.class));
+            }
+        });
         multipleImagePicker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(HomeActivity.this, ImagePickerActivity.class));
-                Animatoo.animateWindmill(getApplicationContext());
             }
         });
         progressButton.setOnClickListener(new View.OnClickListener() {

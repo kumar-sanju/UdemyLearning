@@ -16,6 +16,18 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="Image ProgressBar"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/imageProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Image ProgressBar"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Multiple Image Picker"
             android:gravity="center"
             />
