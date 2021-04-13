@@ -11,6 +11,7 @@ public class JsonActivity extends AppCompatActivity {
 
     Button btn;
     TextView text;
+    String url = "http://www.json-generator.com/api/json/get/cgzxGfyxXC?indent=2";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
