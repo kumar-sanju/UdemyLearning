@@ -37,7 +37,14 @@ public class HomeActivity extends AppCompatActivity {
         Button multipleImagePicker = (Button) findViewById(R.id.multipleImagePicker);
         Button imageProgressBar = (Button) findViewById(R.id.imageProgressBar);
         Button emailSend = (Button) findViewById(R.id.emailSend);
+        Button jsonRecieve = (Button) findViewById(R.id.jsonRecieve);
 
+        jsonRecieve.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, JsonImportActivity.class));
+            }
+        });
         emailSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

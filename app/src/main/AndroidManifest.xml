@@ -18,7 +18,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EmailSendOptionActivity"></activity>
+        <activity android:name=".JsonImportActivity"></activity>
+        <activity android:name=".EmailSendOptionActivity" />
         <activity android:name=".JsonActivity" />
         <activity android:name=".imageProgressBarActivity" />
         <activity

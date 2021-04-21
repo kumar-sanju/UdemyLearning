@@ -1,0 +1,26 @@
+{
+  "formulas": [
+    {
+      "formula": "Sanjay",
+      "url": "www.google.com"
+    },
+    {
+      "formula": "Arijit",
+      "url": "www.arijit.com"
+    },
+    {
+      "formula": "Balabhadra",
+      "url": "www.balabhadra.com"
+    }
+  ],
+  "value": [
+    {
+      "formula": "Neel",
+      "url": "www.neel.com"
+    },
+    {
+      "formula": "Gourab",
+      "url": "www.gourab.com"
+    }
+  ]
+}
