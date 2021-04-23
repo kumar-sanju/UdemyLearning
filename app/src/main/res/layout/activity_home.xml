@@ -16,14 +16,26 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Json recieve data"
+            android:text="Json recycler data"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/jsonRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Json recycler data"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Json ListView data"
             android:gravity="center"
             />
         <Button
             android:id="@+id/jsonRecieve"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Json recieve data"
+            android:text="Json ListView data"
             />
         <TextView
             android:layout_width="match_parent"
