@@ -27,29 +27,23 @@ public class RecyclerJsonAdapter extends RecyclerView.Adapter<RecyclerJsonAdapte
 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        // infalte the item Layout
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_json, parent, false);
-        MyViewHolder vh = new MyViewHolder(v); // pass the view to View Holder
-        return vh;
+        MyViewHolder viewHolder = new MyViewHolder(v); // pass the view to View Holder
+        return viewHolder;
     }
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, final int position) {
-        // set the data in items
         holder.name.setText(personNames.get(position));
         holder.email.setText(emailIds.get(position));
         holder.mobileNo.setText(mobileNumbers.get(position));
-        // implement setOnClickListener event on item view.
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // display a toast with person name on item click
                 Toast.makeText(context, personNames.get(position), Toast.LENGTH_SHORT).show();
             }
         });
-
     }
-
 
     @Override
     public int getItemCount() {
@@ -62,11 +56,9 @@ public class RecyclerJsonAdapter extends RecyclerView.Adapter<RecyclerJsonAdapte
         public MyViewHolder(View itemView) {
             super(itemView);
 
-            // get the reference of item view's
             name = (TextView) itemView.findViewById(R.id.name);
             email = (TextView) itemView.findViewById(R.id.email);
             mobileNo = (TextView) itemView.findViewById(R.id.mobileNo);
-
         }
     }
 }

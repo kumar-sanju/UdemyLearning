@@ -39,7 +39,14 @@ public class HomeActivity extends AppCompatActivity {
         Button emailSend = (Button) findViewById(R.id.emailSend);
         Button jsonRecieve = (Button) findViewById(R.id.jsonRecieve);
         Button jsonRecycler = (Button) findViewById(R.id.jsonRecycler);
+        Button jeoLoaction = (Button) findViewById(R.id.jeoLoaction);
 
+        jeoLoaction.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, GeoLocationActivity.class));
+            }
+        });
         jsonRecycler.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

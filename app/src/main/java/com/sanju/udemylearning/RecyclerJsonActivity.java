@@ -16,7 +16,6 @@ import java.util.ArrayList;
 
 public class RecyclerJsonActivity extends AppCompatActivity {
 
-    // ArrayList for person names, email Id's and mobile numbers
     ArrayList<String> personNames = new ArrayList<>();
     ArrayList<String> emailIds = new ArrayList<>();
     ArrayList<String> mobileNumbers = new ArrayList<>();
@@ -26,9 +25,7 @@ public class RecyclerJsonActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_json);
 
-        // get the reference of RecyclerView
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-        // set a LinearLayoutManager with default vertical orientation
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(linearLayoutManager);
 
