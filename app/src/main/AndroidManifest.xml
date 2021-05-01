@@ -6,8 +6,8 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- the following two permissions are required if you want to take photo in selector -->
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:name=".DemoApplication"
@@ -20,7 +20,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GeoLocationActivity"></activity>
+        <activity android:name=".SharedPrefrenceActivity"></activity>
+        <activity android:name=".TimeTableActivity" />
+        <activity android:name=".StopwatchActivity" />
+        <activity android:name=".GeoLocationActivity" />
         <activity android:name=".RecyclerJsonActivity" />
         <activity android:name=".JsonImportActivity" />
         <activity android:name=".EmailSendOptionActivity" />

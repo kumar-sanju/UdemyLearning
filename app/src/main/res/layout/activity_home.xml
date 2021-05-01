@@ -16,6 +16,42 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="Share Prefrence"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/shaePrerence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share Prefrence"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time table"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/timeTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time table"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stop watch"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/stopWatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stop watch"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Jeo Location"
             android:gravity="center"
             />

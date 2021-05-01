@@ -24,7 +24,7 @@ public class GeoLocationActivity extends AppCompatActivity {
     Button btnGetLocation;
     TextView showLocation;
     LocationManager locationManager;
-    String latitude, longitude;
+    String geoLatitude, geoLongitude;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +63,7 @@ public class GeoLocationActivity extends AppCompatActivity {
         final AlertDialog alertDialog = builder.create();
         alertDialog.show();
     }
-    
+
     private void getLocation() {
         if (ActivityCompat.checkSelfPermission(
                 GeoLocationActivity.this,Manifest.permission.ACCESS_FINE_LOCATION)
@@ -77,9 +77,9 @@ public class GeoLocationActivity extends AppCompatActivity {
             if (locationGPS != null) {
                 double lat = locationGPS.getLatitude();
                 double longi = locationGPS.getLongitude();
-                latitude = String.valueOf(lat);
-                longitude = String.valueOf(longi);
-                showLocation.setText("Your Location: " + "\n" + "Latitude: " + latitude + "\n" + "Longitude: " + longitude);
+                geoLatitude = String.valueOf(lat);
+                geoLongitude = String.valueOf(longi);
+                showLocation.setText("Your Location: " + "\n" + "Latitude: " + geoLatitude + "\n" + "Longitude: " + geoLongitude);
             } else {
                 Toast.makeText(this, "Unable to find location.", Toast.LENGTH_SHORT).show();
             }

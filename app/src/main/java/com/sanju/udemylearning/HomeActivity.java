@@ -40,7 +40,28 @@ public class HomeActivity extends AppCompatActivity {
         Button jsonRecieve = (Button) findViewById(R.id.jsonRecieve);
         Button jsonRecycler = (Button) findViewById(R.id.jsonRecycler);
         Button jeoLoaction = (Button) findViewById(R.id.jeoLoaction);
+        Button stopWatch = (Button) findViewById(R.id.stopWatch);
+        Button timeTable = (Button) findViewById(R.id.timeTable);
+        Button shaePrerence = (Button) findViewById(R.id.shaePrerence);
 
+        shaePrerence.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, SharedPrefrenceActivity.class));
+            }
+        });
+        timeTable.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, TimeTableActivity.class));
+            }
+        });
+        stopWatch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, StopwatchActivity.class));
+            }
+        });
         jeoLoaction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
