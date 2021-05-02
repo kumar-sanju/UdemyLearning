@@ -20,7 +20,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SharedPrefrenceActivity"></activity>
+        <activity android:name=".NoteApp.NoteEditorActivity"></activity>
+        <activity android:name=".NoteApp.NoteUsingSharedPrefrenceActivity" />
+        <activity android:name=".sharedPrefrence.SharedPrefrenceActivity" />
         <activity android:name=".TimeTableActivity" />
         <activity android:name=".StopwatchActivity" />
         <activity android:name=".GeoLocationActivity" />

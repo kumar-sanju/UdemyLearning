@@ -7,7 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+import com.sanju.udemylearning.NoteApp.NoteUsingSharedPrefrenceActivity;
+import com.sanju.udemylearning.sharedPrefrence.SharedPrefrenceActivity;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -43,7 +44,14 @@ public class HomeActivity extends AppCompatActivity {
         Button stopWatch = (Button) findViewById(R.id.stopWatch);
         Button timeTable = (Button) findViewById(R.id.timeTable);
         Button shaePrerence = (Button) findViewById(R.id.shaePrerence);
+        Button noteApp = (Button) findViewById(R.id.noteApp);
 
+        noteApp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, NoteUsingSharedPrefrenceActivity.class));
+            }
+        });
         shaePrerence.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
