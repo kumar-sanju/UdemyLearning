@@ -1,12 +1,12 @@
-package com.sanju.udemylearning;
+package com.sanju.udemylearning.JSON;
+
+import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Bundle;
-
-import com.sanju.udemylearning.JSON.RecyclerJsonAdapter;
+import com.sanju.udemylearning.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;

@@ -20,7 +20,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NoteApp.NoteEditorActivity"></activity>
+        <service android:name=".BackgroundProcess.SimpleJobIntentService"
+            android:permission="android.permission.BIND_JOB_SERVICE">
+        </service>
+        <activity android:name=".BackgroundProcess.BackgroundServicesActivity"></activity>
+        <activity android:name=".BackgroundProcess.BackgroundProcessActivity" />
+        <activity android:name=".NoteApp.NoteEditorActivity" />
         <activity android:name=".NoteApp.NoteUsingSharedPrefrenceActivity" />
         <activity android:name=".sharedPrefrence.SharedPrefrenceActivity" />
         <activity android:name=".TimeTableActivity" />

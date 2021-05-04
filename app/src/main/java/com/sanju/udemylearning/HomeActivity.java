@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.sanju.udemylearning.BackgroundProcess.BackgroundProcessActivity;
 import com.sanju.udemylearning.NoteApp.NoteUsingSharedPrefrenceActivity;
 import com.sanju.udemylearning.sharedPrefrence.SharedPrefrenceActivity;
 
@@ -45,7 +46,14 @@ public class HomeActivity extends AppCompatActivity {
         Button timeTable = (Button) findViewById(R.id.timeTable);
         Button shaePrerence = (Button) findViewById(R.id.shaePrerence);
         Button noteApp = (Button) findViewById(R.id.noteApp);
+        Button backgroundProcess = (Button) findViewById(R.id.backgroundProcess);
 
+        backgroundProcess.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, BackgroundProcessActivity.class));
+            }
+        });
         noteApp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
