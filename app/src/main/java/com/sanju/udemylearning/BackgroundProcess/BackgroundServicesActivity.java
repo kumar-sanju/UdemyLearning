@@ -34,7 +34,6 @@ public class BackgroundServicesActivity extends AppCompatActivity {
         textView = findViewById(R.id.textView);
 
         registerReceiver(myBroadcastReciever, new IntentFilter(ACTION_CHECK_STATUS));
-
     }
 
     public void startBtn(View view) {
@@ -75,7 +74,6 @@ public class BackgroundServicesActivity extends AppCompatActivity {
                 int status = intent.getExtras().getInt("status",0);
                 textView.setText(String.valueOf(status+"%"));
                 progressBar.setProgress(status,true);
-
             }
         }
     };

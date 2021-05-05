@@ -4,10 +4,10 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- the following two permissions are required if you want to take photo in selector -->
-    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:name=".DemoApplication"
@@ -20,10 +20,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <service android:name=".BackgroundProcess.SimpleJobIntentService"
-            android:permission="android.permission.BIND_JOB_SERVICE">
-        </service>
-        <activity android:name=".BackgroundProcess.BackgroundServicesActivity"></activity>
+        <activity android:name=".androidxCamera.CameraxActivity"></activity>
+
+        <service
+            android:name=".BackgroundProcess.SimpleJobIntentService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity android:name=".BackgroundProcess.BackgroundServicesActivity" />
         <activity android:name=".BackgroundProcess.BackgroundProcessActivity" />
         <activity android:name=".NoteApp.NoteEditorActivity" />
         <activity android:name=".NoteApp.NoteUsingSharedPrefrenceActivity" />

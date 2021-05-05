@@ -8,7 +8,9 @@ import android.view.View;
 import android.widget.Button;
 
 import com.sanju.udemylearning.BackgroundProcess.BackgroundProcessActivity;
+import com.sanju.udemylearning.BackgroundProcess.BackgroundServicesActivity;
 import com.sanju.udemylearning.NoteApp.NoteUsingSharedPrefrenceActivity;
+import com.sanju.udemylearning.androidxCamera.CameraxActivity;
 import com.sanju.udemylearning.sharedPrefrence.SharedPrefrenceActivity;
 
 public class HomeActivity extends AppCompatActivity {
@@ -47,7 +49,21 @@ public class HomeActivity extends AppCompatActivity {
         Button shaePrerence = (Button) findViewById(R.id.shaePrerence);
         Button noteApp = (Button) findViewById(R.id.noteApp);
         Button backgroundProcess = (Button) findViewById(R.id.backgroundProcess);
+        Button backgroundService = (Button) findViewById(R.id.backgroundService);
+        Button androidxCamera = (Button) findViewById(R.id.androidxCamera);
 
+        androidxCamera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, CameraxActivity.class));
+            }
+        });
+        backgroundService.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, BackgroundServicesActivity.class));
+            }
+        });
         backgroundProcess.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
