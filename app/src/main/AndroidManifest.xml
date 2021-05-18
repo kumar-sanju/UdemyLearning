@@ -20,11 +20,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".androidxCamera.CameraxActivity"></activity>
+        <activity android:name=".JetpackLivedataActivity"></activity>
+        <activity android:name=".DataBindingActivity" />
+        <activity android:name=".androidxCamera.CameraxActivity" />
 
-        <service
-            android:name=".BackgroundProcess.SimpleJobIntentService"
-            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service android:name=".BackgroundProcess.service" />
 
         <activity android:name=".BackgroundProcess.BackgroundServicesActivity" />
         <activity android:name=".BackgroundProcess.BackgroundProcessActivity" />

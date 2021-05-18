@@ -51,7 +51,14 @@ public class HomeActivity extends AppCompatActivity {
         Button backgroundProcess = (Button) findViewById(R.id.backgroundProcess);
         Button backgroundService = (Button) findViewById(R.id.backgroundService);
         Button androidxCamera = (Button) findViewById(R.id.androidxCamera);
+        Button dataBinding = (Button) findViewById(R.id.dataBinding);
 
+        dataBinding.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, DataBindingActivity.class));
+            }
+        });
         androidxCamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
