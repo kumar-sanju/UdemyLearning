@@ -35,7 +35,6 @@ public class LivedataFragment extends Fragment {
                 }
             });
         }
-
         return view;
     }
 }

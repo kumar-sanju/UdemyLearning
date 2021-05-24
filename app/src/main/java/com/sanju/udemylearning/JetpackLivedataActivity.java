@@ -41,12 +41,10 @@ public class JetpackLivedataActivity extends AppCompatActivity {
             }
         });
 
-
         Fragment fragment = new LivedataFragment();
 
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.frame_layout, fragment)
                 .commit();
-
     }
 }

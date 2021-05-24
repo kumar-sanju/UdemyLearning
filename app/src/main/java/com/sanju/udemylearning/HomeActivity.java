@@ -52,7 +52,21 @@ public class HomeActivity extends AppCompatActivity {
         Button backgroundService = (Button) findViewById(R.id.backgroundService);
         Button androidxCamera = (Button) findViewById(R.id.androidxCamera);
         Button dataBinding = (Button) findViewById(R.id.dataBinding);
+        Button jetpactLivedata = (Button) findViewById(R.id.jetpactLivedata);
+        Button espressoUITesing = (Button) findViewById(R.id.espressoUITesing);
 
+        espressoUITesing.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, EspressoTestingUiActivity.class));
+            }
+        });
+        jetpactLivedata.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, JetpackLivedataActivity.class));
+            }
+        });
         dataBinding.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -16,6 +16,30 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="Espresso UI Testing"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/espressoUITesing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Espresso UI Testing"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jet Pack LiveData"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/jetpactLivedata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jet Pack LiveData"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Data Binding"
             android:gravity="center"
             />
