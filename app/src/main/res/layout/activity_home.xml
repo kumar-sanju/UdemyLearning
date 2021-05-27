@@ -16,6 +16,18 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="Use of Retrofit"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/useOfRetrofit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Use of Retrofit"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Espresso UI Testing"
             android:gravity="center"
             />

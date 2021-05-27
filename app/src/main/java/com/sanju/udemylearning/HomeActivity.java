@@ -10,6 +10,7 @@ import android.widget.Button;
 import com.sanju.udemylearning.BackgroundProcess.BackgroundProcessActivity;
 import com.sanju.udemylearning.BackgroundProcess.BackgroundServicesActivity;
 import com.sanju.udemylearning.NoteApp.NoteUsingSharedPrefrenceActivity;
+import com.sanju.udemylearning.Retrofit.RetrofitStudyActivity;
 import com.sanju.udemylearning.androidxCamera.CameraxActivity;
 import com.sanju.udemylearning.sharedPrefrence.SharedPrefrenceActivity;
 
@@ -54,7 +55,14 @@ public class HomeActivity extends AppCompatActivity {
         Button dataBinding = (Button) findViewById(R.id.dataBinding);
         Button jetpactLivedata = (Button) findViewById(R.id.jetpactLivedata);
         Button espressoUITesing = (Button) findViewById(R.id.espressoUITesing);
+        Button useOfRetrofit = (Button) findViewById(R.id.useOfRetrofit);
 
+        useOfRetrofit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, RetrofitStudyActivity.class));
+            }
+        });
         espressoUITesing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

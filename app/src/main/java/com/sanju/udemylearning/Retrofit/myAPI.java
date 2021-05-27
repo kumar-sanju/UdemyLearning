@@ -1,4 +1,4 @@
-package com.sanju.udemylearning;
+package com.sanju.udemylearning.Retrofit;
 
 import java.util.List;
 

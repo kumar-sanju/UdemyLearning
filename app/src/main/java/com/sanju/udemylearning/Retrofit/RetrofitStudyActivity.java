@@ -1,9 +1,11 @@
-package com.sanju.udemylearning;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.sanju.udemylearning.Retrofit;
 
 import android.os.Bundle;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.sanju.udemylearning.R;
 
 import java.util.List;
 
@@ -17,6 +19,8 @@ public class RetrofitStudyActivity extends AppCompatActivity {
 
     TextView tv;
     String url = "http://jsonplaceholder.typicode.com/";
+
+    // website http://jsonplaceholder.typicode.com/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +45,6 @@ public class RetrofitStudyActivity extends AppCompatActivity {
                 List<RetrofitModel> data = response.body();
                 for (int i = 0; i<data.size(); i++){
                     tv.append("SL No: "+data.get(i).getId()+"\n Title: "+data.get(i).getTitle()+"\n\n\n");
-                    
                 }
             }
 
