@@ -8,7 +8,7 @@ import android.os.Bundle;
 
 import com.sanju.udemylearning.R;
 
-public class RecyclerViewStudyActivity extends AppCompatActivity {
+public class SimpleRecyclerViewStudyActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     RecyclerView.Adapter adapter;
@@ -23,6 +23,11 @@ public class RecyclerViewStudyActivity extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
+        recyclerView.setAdapter(adapter);
+        layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
+
+        adapter = new SimpleRecyclerAdapter(this, programeNameList, programeDescriptionList, programeImages);
         recyclerView.setAdapter(adapter);
 
     }

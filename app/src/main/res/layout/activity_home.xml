@@ -16,6 +16,30 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="Grid RecyclerView"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/gridRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grid RecyclerView"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simple RecyclerView"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/simpleRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simple RecyclerView"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Use of Retrofit"
             android:gravity="center"
             />

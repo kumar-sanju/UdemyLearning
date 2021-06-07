@@ -10,6 +10,8 @@ import android.widget.Button;
 import com.sanju.udemylearning.BackgroundProcess.BackgroundProcessActivity;
 import com.sanju.udemylearning.BackgroundProcess.BackgroundServicesActivity;
 import com.sanju.udemylearning.NoteApp.NoteUsingSharedPrefrenceActivity;
+import com.sanju.udemylearning.RecyclerView.GridRecyclerViewStudyActivity;
+import com.sanju.udemylearning.RecyclerView.SimpleRecyclerViewStudyActivity;
 import com.sanju.udemylearning.Retrofit.RetrofitStudyActivity;
 import com.sanju.udemylearning.androidxCamera.CameraxActivity;
 import com.sanju.udemylearning.sharedPrefrence.SharedPrefrenceActivity;
@@ -56,7 +58,21 @@ public class HomeActivity extends AppCompatActivity {
         Button jetpactLivedata = (Button) findViewById(R.id.jetpactLivedata);
         Button espressoUITesing = (Button) findViewById(R.id.espressoUITesing);
         Button useOfRetrofit = (Button) findViewById(R.id.useOfRetrofit);
+        Button simpleRecyclerView = (Button) findViewById(R.id.simpleRecyclerView);
+        Button gridRecyclerView = (Button) findViewById(R.id.gridRecyclerView);
 
+        gridRecyclerView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, GridRecyclerViewStudyActivity.class));
+            }
+        });
+        simpleRecyclerView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, SimpleRecyclerViewStudyActivity.class));
+            }
+        });
         useOfRetrofit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
