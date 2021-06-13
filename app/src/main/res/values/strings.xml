@@ -8,5 +8,6 @@
     <string name="xamarin">Xamarin.Mac was created as a tool for Apple technology application development using the C# programming language. Xamarin.Mac, as with Xamarin.iOS and Xamarin.Android, gives developers up to 90% of code reuse across Android, iOS and Windows.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gmap_key">d0b58f8d1a35ad30c25b78ddbe67d86a</string>
 
 </resources>
