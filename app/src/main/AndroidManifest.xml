@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
     package="com.sanju.udemylearning">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- the following two permissions are required if you want to take photo in selector -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <dist:module dist:instant="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:name=".DemoApplication"
@@ -20,10 +34,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".firebase.ImagesActivity"></activity>
+        <activity android:name=".firebase.UploadRetriveActivity" />
+        <activity android:name=".Sqlite.GradeActivity" />
+        <activity android:name=".Sqlite.LevelActivity" />
+        <activity android:name=".Sqlite.SQLActivity" />
+        <activity android:name=".RoadmapActivity" />
+        <activity android:name=".AddMobActivity" />
+        <activity android:name=".ViewPager.ViwPagerActivity" />
+        <activity android:name=".RemoveBG.RemoveBgActivity"
+            android:label="RemoveBgActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/gmap_key" />
-        <activity android:name=".RecyclerView.GridRecyclerViewStudyActivity"></activity>
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/myadmob_app_id" />
+
+        <activity android:name=".RecyclerView.GridRecyclerViewStudyActivity" />
         <activity android:name=".RecyclerView.SimpleRecyclerViewStudyActivity" />
         <activity android:name=".EspressoTestingUiActivity" />
         <activity android:name=".JetpackLivedataActivity" />

@@ -8,6 +8,16 @@
     <string name="xamarin">Xamarin.Mac was created as a tool for Apple technology application development using the C# programming language. Xamarin.Mac, as with Xamarin.iOS and Xamarin.Android, gives developers up to 90% of code reuse across Android, iOS and Windows.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="gmap_key">d0b58f8d1a35ad30c25b78ddbe67d86a</string>
+    <string name="google_maps_key">d0b58f8d1a35ad30c25b78ddbe67d86a</string>
+
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="myadmob_app_id">ca-app-pub-8641387738393290~6217222120</string>
+    <string name="admob_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="myadmob_banner_id">ca-app-pub-8641387738393290/7338732103</string>
+
+    <string-array name="menu">
+        <item>Add level</item>
+        <item>Add grade</item>
+    </string-array>
 
 </resources>

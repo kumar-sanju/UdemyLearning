@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "36186511469",
+    "firebase_url": "https://library-management-2af5a.firebaseio.com",
+    "project_id": "library-management-2af5a",
+    "storage_bucket": "library-management-2af5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36186511469:android:1a33aaaa2e22d199ddc764",
+        "android_client_info": {
+          "package_name": "com.sanju.library"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36186511469-4c1hrgoartdnls1199siu7iftas8liis.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPEMKLaXmJCNd-A_mVpq37P7LT-u6zgtY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36186511469-4c1hrgoartdnls1199siu7iftas8liis.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36186511469:android:c3b719ef7465f960ddc764",
+        "android_client_info": {
+          "package_name": "com.sanju.udemylearning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36186511469-4c1hrgoartdnls1199siu7iftas8liis.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPEMKLaXmJCNd-A_mVpq37P7LT-u6zgtY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36186511469-4c1hrgoartdnls1199siu7iftas8liis.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36186511469:android:61910a7b9778656cddc764",
+        "android_client_info": {
+          "package_name": "com.smartworld.jobs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36186511469-4c1hrgoartdnls1199siu7iftas8liis.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPEMKLaXmJCNd-A_mVpq37P7LT-u6zgtY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36186511469-4c1hrgoartdnls1199siu7iftas8liis.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

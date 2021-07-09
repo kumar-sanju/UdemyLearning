@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".RoadmapActivity">
+
+    <Button
+        android:id="@+id/btn_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Distance"
+        android:textAllCaps="false"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/text_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location Shows here"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16dp"
+        />
+
+
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:cardCornerRadius="4dp"-->
+<!--        android:layout_margin="15dp"-->
+<!--        app:cardElevation="6dp"-->
+<!--        >-->
+<!--        <com.google.android.gms.maps.MapView-->
+<!--            android:id="@+id/map"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            />-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/et_source"-->
+<!--        android:hint="Enter Source Location"-->
+<!--        android:padding="12dp"-->
+<!--        android:background="@android:drawable/editbox_background"-->
+<!--        />-->
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/et_destination"-->
+<!--        android:hint="Enter Destination Location"-->
+<!--        android:padding="12dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:background="@android:drawable/editbox_background"-->
+<!--        />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/text_view"-->
+<!--        android:textSize="24sp"-->
+<!--        android:gravity="center"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@color/colorPrimary"-->
+<!--        />-->
+
+</LinearLayout>
+

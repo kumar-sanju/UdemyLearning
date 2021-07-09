@@ -13,8 +13,12 @@ import com.sanju.udemylearning.BackgroundProcess.BackgroundServicesActivity;
 import com.sanju.udemylearning.NoteApp.NoteUsingSharedPrefrenceActivity;
 import com.sanju.udemylearning.RecyclerView.GridRecyclerViewStudyActivity;
 import com.sanju.udemylearning.RecyclerView.SimpleRecyclerViewStudyActivity;
+import com.sanju.udemylearning.RemoveBG.RemoveBgActivity;
 import com.sanju.udemylearning.Retrofit.RetrofitStudyActivity;
+import com.sanju.udemylearning.Sqlite.SQLActivity;
+import com.sanju.udemylearning.ViewPager.ViwPagerActivity;
 import com.sanju.udemylearning.androidxCamera.CameraxActivity;
+import com.sanju.udemylearning.firebase.UploadRetriveActivity;
 import com.sanju.udemylearning.sharedPrefrence.SharedPrefrenceActivity;
 
 public class HomeActivity extends AppCompatActivity {
@@ -61,7 +65,49 @@ public class HomeActivity extends AppCompatActivity {
         Button useOfRetrofit = (Button) findViewById(R.id.useOfRetrofit);
         Button simpleRecyclerView = (Button) findViewById(R.id.simpleRecyclerView);
         Button gridRecyclerView = (Button) findViewById(R.id.gridRecyclerView);
+        Button addMobBtn = (Button) findViewById(R.id.addMobBtn);
+        Button mapDirection = (Button) findViewById(R.id.mapDirection);
+        Button sqliteBtn = (Button) findViewById(R.id.sqliteBtn);
+        Button insertDeleteBtn = (Button) findViewById(R.id.insertDeleteBtn);
+        Button viewPagerBtn = (Button) findViewById(R.id.viewPagerBtn);
+        Button remobeBgBTN = (Button) findViewById(R.id.remobeBgBTN);
 
+        remobeBgBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, RemoveBgActivity.class));
+            }
+        });
+        viewPagerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, ViwPagerActivity.class));
+            }
+        });
+        insertDeleteBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, UploadRetriveActivity.class));
+            }
+        });
+        sqliteBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, SQLActivity.class));
+            }
+        });
+        mapDirection.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, RoadmapActivity.class));
+            }
+        });
+        addMobBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, AddMobActivity.class));
+            }
+        });
         gridRecyclerView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

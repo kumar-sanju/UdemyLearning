@@ -16,6 +16,78 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="Remove Bg"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/remobeBgBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remove Bg"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ViewPager"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/viewPagerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ViewPager with Dot indicator"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Image insert delete Database"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/insertDeleteBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Image insert delete Database"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sqlite Database"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/sqliteBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sqlite Database"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Map Direction"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/mapDirection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Map Direction"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Mob Implement"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/addMobBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Mob Implement"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Grid RecyclerView"
             android:gravity="center"
             />

@@ -1,66 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".GeoLocationActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center_horizontal"
-        >
-        <TextView
-            android:id="@+id/showLocation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:hint="Location"
-            android:textSize="24sp" />
-        <Button
-            android:id="@+id/btnGetLocation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Get Location" />
+    <TextView
+        android:id="@+id/showLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Location"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/showLocation2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Location2"
-            android:layout_marginTop="30dp"
-            android:textSize="24sp" />
+    <Button
+        android:id="@+id/btnGetLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Get Location" />
 
-        <Button
-            android:id="@+id/btnGetLocation2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Get Location2" />
+    <TextView
+        android:id="@+id/distanceInM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Distance in Meter"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/distanceKM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Distance in KM"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/distanceInM"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Distance in Meter"
-            android:layout_marginTop="10dp"
-            android:textSize="24sp" />
-        <TextView
-            android:id="@+id/distanceKM"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Distance in KM"
-            android:layout_marginTop="10dp"
-            android:textSize="24sp" />
-
-<!--        <EditText-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_margin="20dp"-->
-<!--            />-->
-
-    </LinearLayout>
-
-
-</ScrollView>
+</LinearLayout>
